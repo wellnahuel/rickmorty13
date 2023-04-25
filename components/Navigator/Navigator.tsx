@@ -10,7 +10,7 @@ function Navigator({ pathNames }: Props) {
   return (
     <div className="flex gap-5 flex-row">
       {pathNames.map((pathName) => (
-        <Link href={pathName.path}>{pathName.name}</Link>
+        <Link key={pathName.path} href={pathName.path}>{pathName.name}</Link>
       ))}
     </div>
   );
