@@ -18,9 +18,12 @@ function App() {
         blurDataURL={arbolBlur}
         placeholder="blur"
         alt="Arbolito"
+        priority
       />
     </div>
   );
 }
+
+//priority le dice al browser que cargue primero las cosas pesadas, mejorando el posicionamiento del SEO
 
 export default App;
