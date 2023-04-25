@@ -11,11 +11,11 @@ async function fetchCharacters() {
 async function Characters() {
   const characters = await fetchCharacters();
   return (
-    <div>
+    <>
       {characters.map((character) => (
         <Card key={character.id} data={character} />
       ))}
-    </div>
+    </>
   );
 }
 
